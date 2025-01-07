@@ -3,7 +3,7 @@ torch
 transformers
 textwrap3
 nltk
-spacy
+spacy==3.5.0
 git+https://github.com/boudinfl/pke.git
 flashtext
 requests

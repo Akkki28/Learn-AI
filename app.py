@@ -4,7 +4,6 @@ from transformers import BertForQuestionAnswering, BertTokenizer
 from textwrap3 import wrap
 import nltk
 import spacy
-from spacy.util import is_package
 from nltk.corpus import wordnet as wn
 from nltk.tokenize import sent_tokenize
 from nltk.corpus import stopwords
@@ -46,9 +45,6 @@ st.markdown(
 nltk_download()
 summary_model, summary_tokenizer, device = load_model_summary()
 question_model, question_tokenizer, device = load_model_question()
-if not is_package("en_core_web_sm"):
-    import subprocess
-    subprocess.run(["python", "-m", "spacy", "download", "en_core_web_sm"], check=True)
 nlp = spacy.load("en_core_web_sm")
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 doubt_model = BertForQuestionAnswering.from_pretrained('bert-large-uncased-whole-word-masking-finetuned-squad')

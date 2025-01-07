@@ -1,6 +1,8 @@
 # LearnAI
 
 LearnAI is a Streamlit-based application that helps users learn efficiently with artificial intelligence. It provides text summarization, keyword extraction, question generation, and doubt solving functionalities.
+![image](https://github.com/user-attachments/assets/d0bbd5f5-c6c4-46f3-ace3-25384d3a1af8)
+![image](https://github.com/user-attachments/assets/6a5cf390-c2c4-40bb-a42a-3432c1e1b78d)
 
 ## Features
 

@@ -1,0 +1,10 @@
+streamlit
+torch
+transformers
+textwrap3
+nltk
+spacy
+git+https://github.com/boudinfl/pke.git
+flashtext
+requests
+sentencepiece
